@@ -68,6 +68,10 @@ private:
 		// メニューの項目数
 		int m_itemNum;
 
+		// リピート入力カウンタ
+		int m_repeatUp;
+		int m_repeatDown;
+
 		// 選択している項目の番号
 		int m_selectIndex;
 	};

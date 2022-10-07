@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "SceneMain.h"
 #include "Pad.h"
 #include "DxLib.h"
@@ -6,7 +7,6 @@ void SceneMain::init()
 {
 	m_textPosX = 0;
 	m_textVecX = 4;
-
 	m_isEnd = false;
 }
 
@@ -25,7 +25,7 @@ void SceneMain::update()
 		m_textVecX = -4;
 	}
 
-	if (Pad::isTrigger(PAD_INPUT_1))
+	if (Pad::isTrigger(PAD_INPUT_2))
 	{
 		m_isEnd = true;
 	}
@@ -34,4 +34,5 @@ void SceneMain::update()
 void SceneMain::draw()
 {
 	DrawString(m_textPosX, 0,"ÉÅÉCÉìâÊñ ",GetColor(255,255,255));
+	
 }
