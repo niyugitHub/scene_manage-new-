@@ -1,5 +1,6 @@
 #pragma once
 #include "SceneBase.h"
+#include"SelectMenu.h"
 
 class SceneTitle : public SceneBase
 {
@@ -14,7 +15,7 @@ public:
 
 
 	virtual void init();
-	virtual void end() {}
+	virtual void end();
 
 	virtual void update();
 	virtual void draw();
@@ -24,6 +25,8 @@ private:
 	// テキスト表示位置変更
 	int m_textPosY;
 	int m_textVecY;
+
+	SelectMenu m_menu;
 
 	bool m_isEnd;
 };
