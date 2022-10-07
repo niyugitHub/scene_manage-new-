@@ -1,4 +1,5 @@
 #include "SceneManager.h"
+#include"Pad.h"
 #include <cassert>
 
 SceneManager::SceneManager()
@@ -47,6 +48,8 @@ void SceneManager::end()
 
 void SceneManager::update()
 {
+	Pad::update();
+
 	bool isEnd = false;
 	switch (m_kind)
 	{
